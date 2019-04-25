@@ -1,3 +1,3 @@
-# Vaccination Tracking
+# Immunization Tracker
 
 ## Marketing Page
