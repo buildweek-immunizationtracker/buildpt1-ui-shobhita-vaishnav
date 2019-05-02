@@ -1,0 +1,467 @@
+.main-container {
+
+    // Default device is mobile in Mobile first design layout
+    a {
+        text-decoration: none;
+        font-size: 1.12rem;
+        padding: 10px;
+        color: darkblue;
+        font-family: Merriweather, bold;
+
+        &:hover {
+            color: rgba(0, 212, 255, 1);
+        }
+    }
+
+    .header {
+        background: linear-gradient(90deg, rgba(232, 239, 253)10%, rgba(0, 212, 255, 1) 100%);
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            margin-top: 0px;
+            padding: 18px;
+        }
+
+        .logo {
+            width: 10%;
+        }
+
+    }
+
+    .imageandlogo {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            text-decoration: none;
+        }
+    }
+
+    // Override for bigger screen ----------------------------------------------
+    @media@screen {
+        a {
+            color: beige;
+            font-size: 1.5rem;
+        }
+
+        .header {
+            background: linear-gradient(90deg, rgba(232, 239, 253)10%, rgba(0, 212, 255, 1) 100%);
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+            h1 {
+                padding-top: 20px;
+                padding-right: 250px;
+            }
+
+            .headertext {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+                padding-top: 20px;
+                padding-right: 125px;
+            }
+        }
+
+        .imageandlogo {
+            .login {
+                height: 40px;
+                width: 100px;
+                // border:1px solid red;
+                // background: linear-gradient(90deg, white 10%, rgba(0, 212, 255, 1) 100%);
+                background-color: rgba(0, 212, 255, 1);
+                padding: 10px;
+                border: 1px solid rgba(0, 212, 255, 1);
+                border-radius: 10px;
+                text-align: center;
+                margin-left: 295px;
+                margin-right: 10px;
+
+                &:hover {
+                    color: rgba(0, 212, 255, 1);
+                    background: white;
+                    border: 1px solid rgba(0, 212, 255, 1);
+                    border-radius: 10px;
+                }
+            }
+
+            .register {
+                text-align: center;
+                height: 40px;
+                width: 100px;
+                padding: 9px 5px;
+
+                background-color: hotpink;
+                border-radius: 10px;
+                color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: hotpink;
+                    background: white;
+                    border: 1px solid hotpink;
+                    border-radius: 10px;
+                }
+            }
+
+            .clinic {
+                text-align: center;
+                height: 40px;
+                width: 130px;
+                padding-top: 10px;
+                background-color: #00897B;
+                border-radius: 10px;
+                // color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: #00897B;
+                    background-color: white;
+                    border: 1px solid #00897B;
+                    border-radius: 10px;
+
+
+                }
+            }
+        }
+
+        .navigation {
+            .back {
+                text-align: center;
+                height: 40px;
+                width: 100px;
+                padding: 10px;
+                background-color: rgb(131, 77, 131);
+                border-radius: 10px;
+                color: white;
+                margin-right: 10px;
+                margin-left: 10px;
+
+                &:hover {
+                    color: rgba(0, 212, 255, 1);
+                    background: white;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                }
+            }
+
+
+            .features {
+                text-align: center;
+                height: 40px;
+                width: 100px;
+                padding-top: 10px;
+                padding-right: 5px;
+                background-color: rgb(236, 113, 12);
+                border-radius: 10px;
+                color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: rgb(236, 113, 12);
+                    background: white;
+                    border: 1px solid rgb(236, 113, 12);
+                    border-radius: 10px;
+                }
+            }
+
+            .child {
+                text-align: center;
+                height: 40px;
+                width: 100px;
+                padding: 10px;
+                background-color: rgb(91, 204, 91);
+                border-radius: 10px;
+                color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: rgb(91, 204, 91);
+                    background: white;
+                    border: 1px solid rgb(91, 204, 91);
+                    border-radius: 10px;
+                }
+            }
+
+            .parent {
+                text-align: center;
+                height: 40px;
+                width: 100px;
+                padding: 10px;
+                background-color: goldenrod;
+                border-radius: 10px;
+                color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: goldenrod;
+
+                    background: white;
+                    border: 1px solid goldenrod;
+                    border-radius: 10px;
+                }
+            }
+
+            .aboutus {
+                text-align: center;
+                height: 40px;
+                width: 130px;
+                padding: 10px;
+                background-color: hotpink;
+                border-radius: 10px;
+                color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: hotpink;
+                    background: white;
+                    border: 1px solid hotpink;
+                    border-radius: 10px;
+                }
+            }
+
+            .contactus {
+                text-align: center;
+                height: 40px;
+                width: 130px;
+                padding-top: 10px;
+                background-color: #00897B;
+                border-radius: 10px;
+                // color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: #00897B;
+                    background-color: white;
+                    border: 1px solid #00897B;
+                    border-radius: 10px;
+
+
+                }
+            }
+        }
+    }
+
+    // Tablet media queries ------------------------------------
+    @media@tablet {
+        a {
+            color: beige;
+            font-size: 1.5rem;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: linear-gradient(90deg, rgba(232, 239, 253)10%, rgba(0, 212, 255, 1) 100%);
+            text-align: center;
+
+            h1 {
+                margin-top: 0px;
+                padding-top: 20px;
+                padding-left: 250px;
+            }
+
+            .logo {
+                width: 10%;
+            }
+        }
+
+        .imageandlogo {
+
+            .login {
+                height: 40px;
+                width: 100px;
+
+                // background: linear-gradient(90deg, white 10%, rgba(0, 212, 255, 1) 100%);
+                background-color: rgba(0, 212, 255, 1);
+                padding: 10px;
+                border: 1px solid rgba(0, 212, 255, 1);
+                border-radius: 10px;
+                text-align: center;
+                margin-left: 255px;
+                margin-right: 10px;
+
+                &:hover {
+                    color: rgba(0, 212, 255, 1);
+                    background: white;
+                    border: 1px solid rgba(0, 212, 255, 1);
+                    border-radius: 10px;
+                }
+            }
+
+            .register {
+                text-align: center;
+                height: 40px;
+                width: 100px;
+                padding: 9px 5px;
+                background-color: hotpink;
+                border-radius: 10px;
+                color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: hotpink;
+                    background: white;
+                    border: 1px solid hotpink;
+                    border-radius: 10px;
+                }
+            }
+
+            .clinic {
+                text-align: center;
+                height: 40px;
+                width: 130px;
+                padding-top: 10px;
+                background-color: #00897B;
+                border-radius: 10px;
+                // color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: #00897B;
+                    background-color: white;
+                    border: 1px solid #00897B;
+                    border-radius: 10px;
+
+
+                }
+            }
+
+        }
+
+        .navigation {
+            .back {
+                text-align: center;
+                height: 40px;
+                width: 100px;
+                padding: 10px;
+                background-color: rgb(131, 77, 131);
+                border-radius: 10px;
+                color: white;
+                margin-right: 10px;
+                margin-left: 10px;
+
+                &:hover {
+                    color: rgba(0, 212, 255, 1);
+                    background: white;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                }
+            }
+
+
+            .features {
+                text-align: center;
+                height: 40px;
+                width: 100px;
+                padding-top: 10px;
+                padding-right: 5px;
+                background-color: rgb(236, 113, 12);
+                border-radius: 10px;
+                color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: rgb(236, 113, 12);
+                    background: white;
+                    border: 1px solid rgb(236, 113, 12);
+                    border-radius: 10px;
+                }
+            }
+
+            .child {
+                text-align: center;
+                height: 40px;
+                width: 100px;
+                padding: 10px;
+                background-color: rgb(91, 204, 91);
+                border-radius: 10px;
+                color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: rgb(91, 204, 91);
+                    background: white;
+                    border: 1px solid rgb(91, 204, 91);
+                    border-radius: 10px;
+                }
+            }
+
+            .parent {
+                text-align: center;
+                height: 40px;
+                width: 100px;
+                padding: 10px;
+                background-color: goldenrod;
+                border-radius: 10px;
+                color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: goldenrod;
+
+                    background: white;
+                    border: 1px solid goldenrod;
+                    border-radius: 10px;
+                }
+            }
+
+            .aboutus {
+                text-align: center;
+                height: 40px;
+                width: 130px;
+                padding: 10px;
+                background-color: hotpink;
+                border-radius: 10px;
+                color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: hotpink;
+                    background: white;
+                    border: 1px solid hotpink;
+                    border-radius: 10px;
+                }
+            }
+
+            .contactus {
+                text-align: center;
+                height: 40px;
+                width: 130px;
+                padding-top: 10px;
+                background-color: #00897B;
+                border-radius: 10px;
+                // color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: #00897B;
+                    background-color: white;
+                    border: 1px solid #00897B;
+                    border-radius: 10px;
+
+
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+}
