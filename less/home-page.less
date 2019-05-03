@@ -13,44 +13,40 @@
     border: 3px solid rgb(28, 65, 228);
     margin-bottom: 10%;
     margin-top: 10%;
-}
 
-@media @screen {
+    h2 {
+        padding-top: 2%;
+        margin-left: 25%;
+    }
 
-    .aboutus-target {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 10%;
-        margin-bottom: 10%;
+    p {
+        padding: 10px 30px;
 
-        .member {
-            display: flex;
-            flex-direction: row;
-            background: linear-gradient(90deg, rgba(232, 239, 253) 10%, dodgerblue 100%);
-            margin: 5px;
-            height: 200px;
-            border: 3px solid rgb(28, 65, 228);
-            justify-content: space-between;
+        strong {
+            font-weight: bold;
         }
     }
+}
 
-    .features-target {
-        background: linear-gradient(90deg, rgba(232, 239, 253) 10%, rgba(146, 183, 247) 100%);
-        border: 3px solid rgb(28, 65, 228);
-        margin-bottom: 10%;
-        margin-top: 10%;
+.child-target {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background: linear-gradient(90deg, rgba(232, 239, 253) 10%, rgba(146, 183, 247) 100%);
+    border: 3px solid rgb(28, 65, 228);
+
+    h2 {
+        margin-top: 50px;
+        margin-left: 25%;
     }
 
-    .child-target {
-        margin-bottom: 20%;
+    p {
+        padding: 10px 30px;
     }
+}
 
-    .parent-target {
-        margin-bottom: 20%;
-        margin-left: 14%;
-    }
-
+.parent-target {
+    margin-bottom: 20%;
+    margin-left: 14%;
 }
 
 .signups {
@@ -84,6 +80,7 @@
         background-color: dodgerblue;
         border-radius: 10px;
         margin-right: 10px;
+        margin-left: 1%;
 
         &:hover {
             color: dodgerblue;
@@ -96,7 +93,29 @@
     }
 }
 
+// Desktop media queries-----------------------------------------------------------------------------------
+@media @screen {
 
+    .aboutus-target {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+
+        .member {
+            display: flex;
+            flex-direction: row;
+            background: linear-gradient(90deg, rgba(232, 239, 253) 10%, dodgerblue 100%);
+            margin: 5px;
+            height: 200px;
+            border: 3px solid rgb(28, 65, 228);
+            justify-content: space-between;
+        }
+    }
+}
+
+// Tablet media queries-----------------------------------------
 @media @tablet {
 
     .aboutus-target {
@@ -114,66 +133,6 @@
             height: 200px;
             border: 3px solid rgb(28, 65, 228);
             justify-content: space-between;
-        }
-    }
-
-    .features-target {
-        background: linear-gradient(90deg, rgba(232, 239, 253) 10%, rgba(146, 183, 247) 100%);
-        justify-content: center;
-        border: 3px solid rgb(28, 65, 228);
-        margin-bottom: 10%;
-        margin-top: 10%;
-    }
-
-    .child-target {
-        margin-bottom: 20%;
-    }
-
-    .parent-target {
-        margin-bottom: 20%;
-        margin-left: 14%;
-    }
-
-    .signups {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        .aboutus {
-            text-align: center;
-            height: 40px;
-            width: 130px;
-            padding: 10px;
-            background-color: coral;
-            border-radius: 10px;
-            color: white;
-            margin-right: 10px;
-
-            &:hover {
-                color: coral;
-                background: white;
-                border: 1px solid coral;
-                border-radius: 10px;
-            }
-        }
-
-        .contactus {
-            text-align: center;
-            height: 40px;
-            width: 130px;
-            padding-top: 10px;
-            background-color: dodgerblue;
-            border-radius: 10px;
-            margin-right: 10px;
-
-            &:hover {
-                color: dodgerblue;
-                background-color: white;
-                border: 1px solid dodgerblue;
-                border-radius: 10px;
-
-
-            }
         }
     }
 }

@@ -189,53 +189,34 @@ img {
 }
 .main-container .header {
   background: linear-gradient(90deg, rgba(232, 239, 253) 10%, #00d4ff 100%);
-  text-align: center;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-left: 1%;
 }
-.main-container .header h1 {
-  margin-top: 0px;
-  padding: 18px;
+.main-container .header .text {
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
-.main-container .header .logo {
-  width: 10%;
-}
-.main-container .imageandlogo {
+.main-container .navbtns {
   display: flex;
   flex-direction: row;
   font-size: 1.5rem;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.main-container .imageandlogo .navigation {
+.main-container .navbtns .navigation {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   text-decoration: none;
 }
-@media (min-width:1000px) {
+@media (min-width:1026px) {
   .main-container a {
     color: beige;
     font-size: 1.5rem;
   }
-  .main-container .header {
-    background: linear-gradient(90deg, rgba(232, 239, 253) 10%, #00d4ff 100%);
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-  .main-container .header h1 {
-    padding-top: 20px;
-    padding-right: 250px;
-  }
-  .main-container .header .headertext {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    padding-top: 20px;
-    padding-right: 125px;
-  }
-  .main-container .imageandlogo .login {
+  .main-container .navbtns .login {
     height: 40px;
     width: 100px;
     background-color: #00d4ff;
@@ -246,13 +227,13 @@ img {
     margin-left: 295px;
     margin-right: 10px;
   }
-  .main-container .imageandlogo .login:hover {
+  .main-container .navbtns .login:hover {
     color: #00d4ff;
     background: white;
     border: 1px solid #00d4ff;
     border-radius: 10px;
   }
-  .main-container .imageandlogo .register {
+  .main-container .navbtns .register {
     text-align: center;
     height: 40px;
     width: 100px;
@@ -262,13 +243,13 @@ img {
     color: white;
     margin-right: 10px;
   }
-  .main-container .imageandlogo .register:hover {
+  .main-container .navbtns .register:hover {
     color: hotpink;
     background: white;
     border: 1px solid hotpink;
     border-radius: 10px;
   }
-  .main-container .imageandlogo .clinic {
+  .main-container .navbtns .clinic {
     text-align: center;
     height: 40px;
     width: 130px;
@@ -277,7 +258,7 @@ img {
     border-radius: 10px;
     margin-right: 10px;
   }
-  .main-container .imageandlogo .clinic:hover {
+  .main-container .navbtns .clinic:hover {
     color: #00897B;
     background-color: white;
     border: 1px solid #00897B;
@@ -349,59 +330,16 @@ img {
     border: 1px solid goldenrod;
     border-radius: 10px;
   }
-  .main-container .navigation .aboutus {
-    text-align: center;
-    height: 40px;
-    width: 130px;
-    padding: 10px;
-    background-color: hotpink;
-    border-radius: 10px;
-    color: white;
-    margin-right: 10px;
-  }
-  .main-container .navigation .aboutus:hover {
-    color: hotpink;
-    background: white;
-    border: 1px solid hotpink;
-    border-radius: 10px;
-  }
-  .main-container .navigation .contactus {
-    text-align: center;
-    height: 40px;
-    width: 130px;
-    padding-top: 10px;
-    background-color: #00897B;
-    border-radius: 10px;
-    margin-right: 10px;
-  }
-  .main-container .navigation .contactus:hover {
-    color: #00897B;
-    background-color: white;
-    border: 1px solid #00897B;
-    border-radius: 10px;
-  }
 }
-@media (min-width:501px) and (max-width:999px) {
+@media (min-width:485px) and (max-width:1026px) {
   .main-container a {
     color: beige;
     font-size: 1.5rem;
   }
   .main-container .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: linear-gradient(90deg, rgba(232, 239, 253) 10%, #00d4ff 100%);
-    text-align: center;
+    background: linear-gradient(90deg, rgba(232, 239, 253) 10%, dodgerblue 100%);
   }
-  .main-container .header h1 {
-    margin-top: 0px;
-    padding-top: 20px;
-    padding-left: 250px;
-  }
-  .main-container .header .logo {
-    width: 10%;
-  }
-  .main-container .imageandlogo .login {
+  .main-container .navbtns .login {
     height: 40px;
     width: 100px;
     background-color: #00d4ff;
@@ -412,13 +350,13 @@ img {
     margin-left: 255px;
     margin-right: 10px;
   }
-  .main-container .imageandlogo .login:hover {
+  .main-container .navbtns .login:hover {
     color: #00d4ff;
     background: white;
     border: 1px solid #00d4ff;
     border-radius: 10px;
   }
-  .main-container .imageandlogo .register {
+  .main-container .navbtns .register {
     text-align: center;
     height: 40px;
     width: 100px;
@@ -428,13 +366,13 @@ img {
     color: white;
     margin-right: 10px;
   }
-  .main-container .imageandlogo .register:hover {
+  .main-container .navbtns .register:hover {
     color: hotpink;
     background: white;
     border: 1px solid hotpink;
     border-radius: 10px;
   }
-  .main-container .imageandlogo .clinic {
+  .main-container .navbtns .clinic {
     text-align: center;
     height: 40px;
     width: 130px;
@@ -443,7 +381,7 @@ img {
     border-radius: 10px;
     margin-right: 10px;
   }
-  .main-container .imageandlogo .clinic:hover {
+  .main-container .navbtns .clinic:hover {
     color: #00897B;
     background-color: white;
     border: 1px solid #00897B;
@@ -513,37 +451,6 @@ img {
     color: goldenrod;
     background: white;
     border: 1px solid goldenrod;
-    border-radius: 10px;
-  }
-  .main-container .navigation .aboutus {
-    text-align: center;
-    height: 40px;
-    width: 130px;
-    padding: 10px;
-    background-color: hotpink;
-    border-radius: 10px;
-    color: white;
-    margin-right: 10px;
-  }
-  .main-container .navigation .aboutus:hover {
-    color: hotpink;
-    background: white;
-    border: 1px solid hotpink;
-    border-radius: 10px;
-  }
-  .main-container .navigation .contactus {
-    text-align: center;
-    height: 40px;
-    width: 130px;
-    padding-top: 10px;
-    background-color: #00897B;
-    border-radius: 10px;
-    margin-right: 10px;
-  }
-  .main-container .navigation .contactus:hover {
-    color: #00897B;
-    background-color: white;
-    border: 1px solid #00897B;
     border-radius: 10px;
   }
 }
@@ -557,10 +464,12 @@ img {
   position: relative;
   overflow: hidden;
   margin-top: 16px;
+  margin-left: 3%;
 }
-@media (min-width:1000px) {
+@media (min-width:1026px) {
   .carousel {
     width: 990px;
+    margin-left: 0px;
   }
 }
 .carousel .left-button,
@@ -702,6 +611,11 @@ img {
   margin-top: 150px;
   color: white;
 }
+@media (min-width:485px) and (max-width:1026px) {
+  .copyright {
+    background: linear-gradient(90deg, rgba(232, 239, 253) 10%, dodgerblue 100%);
+  }
+}
 .aboutus-target .member {
   display: flex;
   flex-direction: column;
@@ -715,36 +629,32 @@ img {
   margin-bottom: 10%;
   margin-top: 10%;
 }
-@media (min-width:1000px) {
-  .aboutus-target {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
-  .aboutus-target .member {
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(90deg, rgba(232, 239, 253) 10%, dodgerblue 100%);
-    margin: 5px;
-    height: 200px;
-    border: 3px solid #1c41e4;
-    justify-content: space-between;
-  }
-  .features-target {
-    background: linear-gradient(90deg, rgba(232, 239, 253) 10%, rgba(146, 183, 247) 100%);
-    border: 3px solid #1c41e4;
-    margin-bottom: 10%;
-    margin-top: 10%;
-  }
-  .child-target {
-    margin-bottom: 20%;
-  }
-  .parent-target {
-    margin-bottom: 20%;
-    margin-left: 14%;
-  }
+.features-target h2 {
+  padding-top: 2%;
+  margin-left: 25%;
+}
+.features-target p {
+  padding: 10px 30px;
+}
+.features-target p strong {
+  font-weight: bold;
+}
+.child-target {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  background: linear-gradient(90deg, rgba(232, 239, 253) 10%, rgba(146, 183, 247) 100%);
+  border: 3px solid #1c41e4;
+}
+.child-target h2 {
+  margin-top: 50px;
+  margin-left: 25%;
+}
+.child-target p {
+  padding: 10px 30px;
+}
+.parent-target {
+  margin-bottom: 20%;
+  margin-left: 14%;
 }
 .signups {
   display: flex;
@@ -775,6 +685,7 @@ img {
   background-color: dodgerblue;
   border-radius: 10px;
   margin-right: 10px;
+  margin-left: 1%;
 }
 .signups .contactus:hover {
   color: dodgerblue;
@@ -782,7 +693,25 @@ img {
   border: 1px solid dodgerblue;
   border-radius: 10px;
 }
-@media (min-width:501px) and (max-width:999px) {
+@media (min-width:1026px) {
+  .aboutus-target {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .aboutus-target .member {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(90deg, rgba(232, 239, 253) 10%, dodgerblue 100%);
+    margin: 5px;
+    height: 200px;
+    border: 3px solid #1c41e4;
+    justify-content: space-between;
+  }
+}
+@media (min-width:485px) and (max-width:1026px) {
   .aboutus-target {
     display: flex;
     flex-direction: column;
@@ -798,55 +727,5 @@ img {
     height: 200px;
     border: 3px solid #1c41e4;
     justify-content: space-between;
-  }
-  .features-target {
-    background: linear-gradient(90deg, rgba(232, 239, 253) 10%, rgba(146, 183, 247) 100%);
-    justify-content: center;
-    border: 3px solid #1c41e4;
-    margin-bottom: 10%;
-    margin-top: 10%;
-  }
-  .child-target {
-    margin-bottom: 20%;
-  }
-  .parent-target {
-    margin-bottom: 20%;
-    margin-left: 14%;
-  }
-  .signups {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .signups .aboutus {
-    text-align: center;
-    height: 40px;
-    width: 130px;
-    padding: 10px;
-    background-color: coral;
-    border-radius: 10px;
-    color: white;
-    margin-right: 10px;
-  }
-  .signups .aboutus:hover {
-    color: coral;
-    background: white;
-    border: 1px solid coral;
-    border-radius: 10px;
-  }
-  .signups .contactus {
-    text-align: center;
-    height: 40px;
-    width: 130px;
-    padding-top: 10px;
-    background-color: dodgerblue;
-    border-radius: 10px;
-    margin-right: 10px;
-  }
-  .signups .contactus:hover {
-    color: dodgerblue;
-    background-color: white;
-    border: 1px solid dodgerblue;
-    border-radius: 10px;
   }
 }
